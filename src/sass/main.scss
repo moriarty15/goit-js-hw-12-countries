@@ -1,9 +1,10 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+.container {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
 
-// Стили для файла с примером HTML-фрагмента
 .counties__item,
 .country__item {
   margin: 10px;
@@ -21,7 +22,7 @@
   display: flex;
   margin-top: 40px;
 }
-img {
+.country__flag {
   margin-left: 25px;
   display: block;
   width: 500px;
