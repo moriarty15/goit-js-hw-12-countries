@@ -1,0 +1,14 @@
+<h1>{{onceCountry.name}}</h1>
+<ul>
+    <li>Capital:{{onceCountry.capital}}</li>
+    <li>Population:{{onceCountry.population}}</li>
+    <li>Languages: 
+        <ul>
+            {{#each onceCountry.languages}}
+           <li>{{this.name}}</li>
+           {{/each}}
+        </ul>
+    </li>
+    
+</ul>
+<img src="{{onceCountry.flag}}" alt="{{onceCountry.name}}">
