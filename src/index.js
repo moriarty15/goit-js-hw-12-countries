@@ -1,3 +1,4 @@
+import './sass/main.scss';
 import { debounce } from "lodash";
 import fetchCountries from "./fetchCountries";
 

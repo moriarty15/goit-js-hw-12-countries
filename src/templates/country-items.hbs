@@ -1,14 +1,16 @@
-<h1>{{onceCountry.name}}</h1>
-<ul>
-    <li>Capital:{{onceCountry.capital}}</li>
-    <li>Population:{{onceCountry.population}}</li>
-    <li>Languages: 
-        <ul>
-            {{#each onceCountry.languages}}
-           <li>{{this.name}}</li>
-           {{/each}}
-        </ul>
-    </li>
+<div>
+    <h1>{{onceCountry.name}}</h1>
+    <ul class="country__list">
+        <li class="country__item">Capital: {{onceCountry.capital}}</li>
+        <li class="country__item">Population: {{onceCountry.population}}</li>
+        <li class="country__item">Languages:
+            <ol class="languages__list">
+                {{#each onceCountry.languages}}
+                <li class="languages__item">{{this.name}}</li>
+                {{/each}}
+            </ol>
+        </li>
     
-</ul>
+    </ul>
+</div>
 <img src="{{onceCountry.flag}}" alt="{{onceCountry.name}}">

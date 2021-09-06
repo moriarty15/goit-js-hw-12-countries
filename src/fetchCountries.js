@@ -25,25 +25,3 @@ function fetchCountries(searchQuery) {
   })
 }
 export default fetchCountries;
-
-
-
-
-// const myAlert = alert({
-//   text: "I'm an alert.",
-//   type: 'info'
-// });
-
-
-
-// const myInfo = info({
-//   text: "I'm an info message."
-// });
-
-// const mySuccess = success({
-//   text: "I'm a success message."
-// });
-
-// const myError = error({
-//   text: "I'm an error message."
-// });
