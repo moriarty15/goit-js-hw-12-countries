@@ -11,10 +11,15 @@ const divEl = document.querySelector('.country');
 
 inputEl.addEventListener('input', debounce(inputCatch, 500))
 
+let fetchEl = '';
+
 function inputCatch(e) {
-  console.log(e.target.value);
+
+  if (e.target.value.trim() === fetchEl) {return }
+  fetchEl = e.target.value.trim();
+
   if (e.target.value == ' ' || e.target.value == '') return
-  const fetchResolt = fetchCountries(e.target.value);
+  const fetchResolt = fetchCountries(fetchEl);
   renderHTML(fetchResolt);
 }
 
